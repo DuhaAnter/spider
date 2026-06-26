@@ -92,13 +92,7 @@
                         "unit": "8px"
                     },
                     "fontFamily": {
-                        "headline-lg": ["Bodoni Moda"],
-                        "headline-md": ["Bodoni Moda"],
-                        "headline-xl": ["Bodoni Moda"],
-                        "body-md": ["Hanken Grotesk"],
-                        "headline-lg-mobile": ["Bodoni Moda"],
-                        "body-lg": ["Hanken Grotesk"],
-                        "label-sm": ["Hanken Grotesk"]
+                        "gt": ['"GT America"', 'sans-serif']
                     },
                     "fontSize": {
                         "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
@@ -150,50 +144,55 @@
     </style>
 </head>
 
-<body class=" text-on-surface selection:bg-ruby-core selection:text-white font-body-md overflow-x-hidden">
+<body class=" text-on-surface selection:bg-ruby-core selection:text-white   overflow-x-hidden">
     <!-- Top Navigation Shell -->
-    <nav
-        class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-1 md:py-8 w-full bg-transparent transition-all duration-500">
-        <!-- <div class="flex items-center gap-4">
-            <img alt="Spider Logo" class="h-10 w-auto object-contain" src="./logo.png">
-
+    <!-- <div class="w-full bg-ruby-core h-[40px] py-2 flex justify-center items-center">
+            <p class="">Spider When luxury is created</p>
         </div> -->
-        <ul class="hidden md:flex gap-12 font-body-md text-body-md uppercase tracking-widest text-on-surface">
-            <a href="#">
-                <li class="cursor-pointer transition-all duration-200 text-primary border-b border-primary pb-1">Home
-                </li>
-            </a>
-            <a href="#gallery">
-                <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                    Gallery
-                </li>
-            </a>
-            <a href="#Collections">
-                <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                    Collections
-                </li>
-            </a>
+    <nav
+        class="sticky bg-background top-0 w-full z-50 flex justify-between items-center md:block  px-margin-mobile md:px-4 py-2 md:py-3 md:pt-3 w-full transition-all duration-500">
+        <div class="flex justify-between items-center md:px-5">
+            <ul
+                class="hidden md:flex justify-center items-center gap-8  font-gt text-sm uppercase tracking-widest text-on-surface ">
+                <a href="#">
+                    <li class="cursor-pointer transition-all duration-200 text-primary border-b border-primary pb-1">
+                        Home
+                    </li>
+                </a>
+                <a href="#gallery">
+                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                        Gallery
+                    </li>
+                </a>
+                <a href="#Collections">
+                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                        Collections
+                    </li>
+                </a>
 
-            <a href="#about">
-                <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                    About
-                </li>
-            </a>
-            <a href="#footer">
-                <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                    Contact
-                </li>
-            </a>
-        </ul>
+                <a href="#footer">
+                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                        Contact
+                    </li>
+                </a>
+                <a href="https://duhaanter.github.io/spider/" class="flex justify-center items-center lg:ml-[80px] ">
+                    <img class="w-[150px]" src="./imgs/logo2-removebg-preview.png">
+                </a>
 
-        <div class="text-headline-md material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity duration-300 text-on-surface"
-            data-icon="shopping_bag">shopping_bag</div>
-        <div class="md:hidden material-symbols-outlined cursor-pointer" data-icon="menu">menu</div>
+            </ul>
+
+            <i class="text-2xl fa-solid fa-bag-shopping"></i>
+        </div>
+
+        <a href="https://duhaanter.github.io/spider/" class="md:hidden flex justify-center items-center ">
+            <img class="w-[80px]" src="./imgs/logo2-removebg-preview.png">
+        </a>
+        <div class="md:hidden  cursor-pointer"><i class="text-2xl fa-solid fa-bars"></i></div>
 
     </nav>
     <!-- Hero Section -->
     <section class="relative  w-full flex items-center justify-center">
-        <img src="./file_00000000507471f481fbc94ac58bd636.png" class="h-full w-full">
+        <img src="./imgs/file_00000000507471f481fbc94ac58bd636.png" class="h-full w-full">
     </section>
 
     <!-- gallery section -->
@@ -201,7 +200,7 @@
         <div class="grid md:grid-cols-4 grid-rows-2 gap-3 ">
 
             <div class="col-span-2 row-span-2 overflow-hidden rounded-lg">
-                <img src="https://picsum.photos/400/300" alt="Man at sea" class="w-full h-full object-cover">
+                <img src="./imgs/dubai.jpg" alt="Man at sea" class="w-full h-full object-cover">
             </div>
 
             <div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
@@ -304,7 +303,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full mb-10">
                 <div class="flex flex-col gap-6">
                     <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Navigation</h5>
-                    <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+                    <ul class="flex flex-col gap-4   text-on-surface-variant">
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Collections</a></li>
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Gallery</a></li>
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">About</a></li>
@@ -313,7 +312,7 @@
                 </div>
                 <div class="flex flex-col gap-6">
                     <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Legal</h5>
-                    <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+                    <ul class="flex flex-col gap-4   text-on-surface-variant">
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
                         </li>
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Terms of Service</a>
@@ -322,7 +321,7 @@
                 </div>
                 <div class="flex flex-col gap-6">
                     <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Join Us</h5>
-                    <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+                    <ul class="flex flex-col gap-4   text-on-surface-variant">
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Careers</a></li>
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Affiliate Program</a>
                         </li>
@@ -331,13 +330,15 @@
                 <div class="flex flex-col gap-6">
                     <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Follow Us
                     </h5>
-                    <ul class="flex gap-4 font-body-md text-ruby-core text-2xl">
+                    <ul class="flex gap-4   text-ruby-core text-2xl">
                         <li><a class="hover:text-primary transition-colors duration-300" href="#"><i
                                     class="fa-brands fa-instagram"></i></a></li>
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#"><i
+                        <li><a class="hover:text-primary transition-colors duration-300"
+                                href="https://www.facebook.com/share/1FAj3x7cLg/" target="_blank"><i
                                     class="fa-brands fa-facebook-f "></i></a></li>
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#"><i
-                                    class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a class="hover:text-primary transition-colors duration-300"
+                                href="https://www.tiktok.com/@spideer_fashion?is_from_webapp=1&sender_device=pc"
+                                target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -348,16 +349,16 @@
     </footer>
     <script>
         // Navbar opacity and style scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                nav.classList.add('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
-                nav.classList.remove('md:py-8', 'bg-transparent');
-            } else {
-                nav.classList.remove('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
-                nav.classList.add('md:py-8', 'bg-transparent');
-            }
-        });        
+        // window.addEventListener('scroll', () => {
+        //     const nav = document.querySelector('nav');
+        //     if (window.scrollY > 100) {
+        //         nav.classList.add('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
+        //         nav.classList.remove('md:py-8', 'bg-transparent');
+        //     } else {
+        //         nav.classList.remove('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
+        //         nav.classList.add('md:py-8', 'bg-transparent');
+        //     }
+        // });        
     </script>
 </body>
 
