@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Spider | The Origin of Fashion</title>
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="./favicon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="./imgs/only spider.png">
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap"
@@ -108,8 +108,8 @@
         }
     </script>
     <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        #preloader {
+            transition: opacity 0.6s ease-out;
         }
 
         .hairline-border {
@@ -144,224 +144,256 @@
     </style>
 </head>
 
-<body class=" text-on-surface selection:bg-ruby-core selection:text-white   overflow-x-hidden">
-
-    <nav
-        class="sticky bg-background flex justify-between items-center top-0 w-full z-50  px-margin-mobile md:px-4 py-2 md:py-3 md:pt-3 w-full transition-all duration-500">
-
-
-        <div class="lg:hidden  cursor-pointer"><i class="text-2xl fa-solid fa-bars"></i></div>
-
-        <div class="hidden lg:flex justify-between items-center flex-1  ">
-            <ul
-                class="md:flex justify-center items-center gap-4  font-gt text-[12px] uppercase tracking-widest text-on-surface ">
-                <a href="#">
-                    <li class="cursor-pointer transition-all duration-200 text-primary border-b border-primary pb-1">
-                        Home
-                    </li>
-                </a>
-                <a href="#gallery">
-                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                        Gallery
-                    </li>
-                </a>
-                <a href="#Collections">
-                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                        Collections
-                    </li>
-                </a>
-
-                <a href="#footer">
-                    <li class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
-                        Contact
-                    </li>
-                </a>
-
-            </ul>
-        </div>
-        <div class="lg:flex-1 flex justify-center">
-            <a href="https://duhaanter.github.io/spider/" class="">
-                <img class="w-[80px] md:w-[130px]" src="./imgs/logo2-removebg-preview.png">
-            </a>
-        </div>
+<body class="bg-black text-on-surface selection:bg-ruby-core selection:text-white  overflow-x-hidden ">
+    <!-- Preloader / Video Loader -->
+    <div id="preloader" class="fixed inset-0">
+        <video id="loading-video" class="w-full h-full lg:object-cover" autoplay muted playsinline>
+            <source src="./imgs/video_loader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="main-content" class="hidden">
+        <nav
+            class="sticky bg-background flex justify-between items-center top-0 w-full z-50  px-margin-mobile md:px-4 py-2 md:py-3 md:pt-3 w-full transition-all duration-500">
 
 
-        <div class=" lg:flex-1 flex justify-end lg:pr-5">
-            <i class="text-2xl fa-solid fa-bag-shopping"></i>
-        </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="relative  w-full flex items-center justify-center">
-        <img src="./imgs/hero.jpg" class="h-full w-full">
-    </section>
+            <div class="lg:hidden  cursor-pointer"><i class="text-2xl fa-solid fa-bars"></i></div>
 
-    <!-- gallery section -->
-    <section class="py-24 px-margin-mobile md:px-margin-desktop bg-background" id="gallery">
-        <div class="grid md:grid-cols-4 grid-rows-2 gap-3 ">
+            <div class="hidden lg:flex justify-between items-center flex-1  ">
+                <ul
+                    class="md:flex justify-center items-center gap-4  font-gt text-[12px] uppercase tracking-widest text-on-surface ">
+                    <a href="#">
+                        <li
+                            class="cursor-pointer transition-all duration-200 text-primary border-b border-primary pb-1">
+                            Home
+                        </li>
+                    </a>
+                    <a href="#gallery">
+                        <li
+                            class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                            Gallery
+                        </li>
+                    </a>
+                    <a href="#Collections">
+                        <li
+                            class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                            Collections
+                        </li>
+                    </a>
 
-            <div class="col-span-2 row-span-2 overflow-hidden rounded-lg">
-                <img src="./imgs/dubai.jpg" alt="Man at sea" class="w-full h-full object-cover">
+                    <a href="#footer">
+                        <li
+                            class="cursor-pointer transition-all duration-200 text-on-surface hover:text-primary-fixed-dim">
+                            Contact
+                        </li>
+                    </a>
+
+                </ul>
             </div>
-
-            <div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
-                <img src="https://picsum.photos/400/300" alt="Foggy hill" class="w-full h-full object-cover">
-            </div>
-
-            <div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
-                <img src="https://picsum.photos/400/300" alt="City skyline" class="w-full h-full object-cover">
-            </div>
-
-            <div class="col-span-2 row-span-1 overflow-hidden rounded-lg">
-                <img src="https://picsum.photos/400/300" alt="Winding road" class="w-full h-full object-cover">
+            <div class="lg:flex-1 flex justify-center">
+                <a href="https://duhaanter.github.io/spider/" class="">
+                    <img class="w-[80px] md:w-[130px]" src="./imgs/logo2-removebg-preview.png">
+                </a>
             </div>
 
 
+            <div class=" lg:flex-1 flex justify-end lg:pr-5">
+                <i class="text-2xl fa-solid fa-bag-shopping"></i>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="relative  w-full flex items-center justify-center">
+            <img src="./imgs/hero.jpg" class="h-full w-full">
+        </section>
+        <!-- gallery section -->
+        <section class="py-24 px-margin-mobile md:px-margin-desktop bg-background" id="gallery">
+            <div class="grid md:grid-cols-4 grid-rows-2 gap-3 ">
 
-        </div>
-
-    </section>
-    <!-- spider about section -->
-    <section class="bg-black py-20 md:py-40 px-margin-mobile md:px-margin-desktop" id="about">
-        <div class="max-w-4xl mx-auto text-center">
-            <span
-                class="font-label-sm text-label-sm text-ruby-core uppercase tracking-[0.5em] mb-6 block font-bold">Established
-                1988</span>
-            <h2 class="font-headline-lg text-headline-lg mb-12 text-on-surface">The Spider Legacy</h2>
-            <div class="w-12 h-[1px] bg-ruby-core mx-auto mb-12"></div>
-            <p class="font-body-lg text-body-lg leading-relaxed text-on-surface/70 max-w-2xl mx-auto">
-                Born in the intersection of shadow and structure, SPIDER redefines the architecture of the human form.
-                Every stitch is a web of intent, capturing the raw essence of luxury through sharp geometric precision
-                and the deep, lustrous hues of the ruby core. This is not just apparel; it is the origin of a new
-                sartorial instinct.
-            </p>
-        </div>
-    </section>
-    <!-- collections section -->
-    <section class="bg-background py-24 px-margin-mobile md:px-margin-desktop" id="Collections">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto">
-            <!-- Grid Item 1: Large Vertical Editorial -->
-            <div class="md:col-span-7 md:row-span-2 gallery-image-container relative group h-full">
-                <img class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0"
-                    data-alt="An editorial fashion shot of a model posed in a sharp, geometric industrial setting with cool grey concrete walls. The model wears an avant-garde black wool cape with leather spider-web harness detailing over vibrant red trousers. The lighting is high-contrast, casting long, architectural shadows that highlight the craftsmanship and sharp silhouettes of the garment."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuANy8Uqk-kPmHiSNX83DQ7erwTHdorXXQSEJ9cp8nC0fqt4dphARUV-cFKm7GctbyJr4lOm-b_tJSgUf3VcFPMBawjRr8U2HeBxURshLVZx7QkmCVu79XoKXk0B_wghOkDRuEitGlri5uE_ZMFUL3Y8gwnXwASR43zCrZOD_RVC0VsxomHnz_g_qA0w0qBTD9aVJvf0sAYhfqZFXfb4nbbLjzgiHQ58MP5clFnoppxaCdxOeklwUXi8rsQn_u1ADHpdBKwXbjwEdZk" />
-                <div
-                    class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-12">
-                    <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
-                        <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">01 /
-                            Lookbook</span>
-                        <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">The Crimson
-                            Web</h3>
-                    </div>
+                <div class="col-span-2 row-span-2 overflow-hidden rounded-lg">
+                    <img src="./imgs/dubai.jpg" alt="Man at sea" class="w-full h-full object-cover">
                 </div>
+
+                <div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
+                    <img src="https://picsum.photos/400/300" alt="Foggy hill" class="w-full h-full object-cover">
+                </div>
+
+                <div class="col-span-1 row-span-1 overflow-hidden rounded-lg">
+                    <img src="https://picsum.photos/400/300" alt="City skyline" class="w-full h-full object-cover">
+                </div>
+
+                <div class="col-span-2 row-span-1 overflow-hidden rounded-lg">
+                    <img src="https://picsum.photos/400/300" alt="Winding road" class="w-full h-full object-cover">
+                </div>
+
+
+
             </div>
-            <!-- Grid Item 2: Textural / Product Focus -->
-            <div class="md:col-span-5 flex flex-col gap-gutter">
-                <div class="gallery-image-container relative aspect-square group">
-                    <img class="w-full h-full object-cover group-hover:scale-110"
-                        data-alt="A detailed macro shot of a Spider brand jewelry piece: a brooch designed with intricate silver web-work and large, deep red garnet gemstones. The piece is pinned to a rich black velvet tuxedo lapel. The lighting is focused and warm, making the red facets of the gem sparkle with a luxurious, expensive fire against the soft texture of the fabric."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhqhj6oejZk9poaVuiyQCS8BAK-yy2Nq6iecf9gNNcBeZbkwKqtf4QtFWtU7PnNp3vh61aMbBo1nYPrgSVQG3fNCs6dtHf3Ma74QKtfwChWDo_ro2ciGb3c2ORz2NlN1iNiGx3hb1fSO9lZnmuoj0YI5HYzYXPiEvhq5IlHXx3QURsq-h3_pW0PS0s5Sm-NvZMUNoot0lowhImWXXGrFahqh1oE3x1VjToDvZenhS6iOgZ5Idia3WMsbAdwecOqLKWCeu2QRdtE07" />
+
+        </section>
+        <!-- spider about section -->
+        <section class="bg-black py-20 md:py-40 px-margin-mobile md:px-margin-desktop" id="about">
+            <div class="max-w-4xl mx-auto text-center">
+                <span
+                    class="font-label-sm text-label-sm text-ruby-core uppercase tracking-[0.5em] mb-6 block font-bold">Established
+                    1988</span>
+                <h2 class="font-headline-lg text-headline-lg mb-12 text-on-surface">The Spider Legacy</h2>
+                <div class="w-12 h-[1px] bg-ruby-core mx-auto mb-12"></div>
+                <p class="font-body-lg text-body-lg leading-relaxed text-on-surface/70 max-w-2xl mx-auto">
+                    Born in the intersection of shadow and structure, SPIDER redefines the architecture of the human
+                    form.
+                    Every stitch is a web of intent, capturing the raw essence of luxury through sharp geometric
+                    precision
+                    and the deep, lustrous hues of the ruby core. This is not just apparel; it is the origin of a new
+                    sartorial instinct.
+                </p>
+            </div>
+        </section>
+        <!-- collections section -->
+        <section class="bg-background py-24 px-margin-mobile md:px-margin-desktop" id="Collections">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto">
+                <!-- Grid Item 1: Large Vertical Editorial -->
+                <div class="md:col-span-7 md:row-span-2 gallery-image-container relative group h-full">
+                    <img class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0"
+                        data-alt="An editorial fashion shot of a model posed in a sharp, geometric industrial setting with cool grey concrete walls. The model wears an avant-garde black wool cape with leather spider-web harness detailing over vibrant red trousers. The lighting is high-contrast, casting long, architectural shadows that highlight the craftsmanship and sharp silhouettes of the garment."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuANy8Uqk-kPmHiSNX83DQ7erwTHdorXXQSEJ9cp8nC0fqt4dphARUV-cFKm7GctbyJr4lOm-b_tJSgUf3VcFPMBawjRr8U2HeBxURshLVZx7QkmCVu79XoKXk0B_wghOkDRuEitGlri5uE_ZMFUL3Y8gwnXwASR43zCrZOD_RVC0VsxomHnz_g_qA0w0qBTD9aVJvf0sAYhfqZFXfb4nbbLjzgiHQ58MP5clFnoppxaCdxOeklwUXi8rsQn_u1ADHpdBKwXbjwEdZk" />
                     <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-8">
+                        class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-12">
                         <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
-                            <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">02 /
-                                Atelier</span>
-                            <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">Artifact
-                                04</h3>
+                            <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">01 /
+                                Lookbook</span>
+                            <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">The
+                                Crimson
+                                Web</h3>
                         </div>
                     </div>
                 </div>
-                <div class="gallery-image-container relative aspect-square group">
-                    <img class="w-full h-full object-cover group-hover:scale-110"
-                        data-alt="A detailed macro shot of a Spider brand jewelry piece: a brooch designed with intricate silver web-work and large, deep red garnet gemstones. The piece is pinned to a rich black velvet tuxedo lapel. The lighting is focused and warm, making the red facets of the gem sparkle with a luxurious, expensive fire against the soft texture of the fabric."
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhqhj6oejZk9poaVuiyQCS8BAK-yy2Nq6iecf9gNNcBeZbkwKqtf4QtFWtU7PnNp3vh61aMbBo1nYPrgSVQG3fNCs6dtHf3Ma74QKtfwChWDo_ro2ciGb3c2ORz2NlN1iNiGx3hb1fSO9lZnmuoj0YI5HYzYXPiEvhq5IlHXx3QURsq-h3_pW0PS0s5Sm-NvZMUNoot0lowhImWXXGrFahqh1oE3x1VjToDvZenhS6iOgZ5Idia3WMsbAdwecOqLKWCeu2QRdtE07" />
-                    <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-8">
-                        <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
-                            <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">02 /
-                                Atelier</span>
-                            <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">Artifact
-                                04</h3>
+                <!-- Grid Item 2: Textural / Product Focus -->
+                <div class="md:col-span-5 flex flex-col gap-gutter">
+                    <div class="gallery-image-container relative aspect-square group">
+                        <img class="w-full h-full object-cover group-hover:scale-110"
+                            data-alt="A detailed macro shot of a Spider brand jewelry piece: a brooch designed with intricate silver web-work and large, deep red garnet gemstones. The piece is pinned to a rich black velvet tuxedo lapel. The lighting is focused and warm, making the red facets of the gem sparkle with a luxurious, expensive fire against the soft texture of the fabric."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhqhj6oejZk9poaVuiyQCS8BAK-yy2Nq6iecf9gNNcBeZbkwKqtf4QtFWtU7PnNp3vh61aMbBo1nYPrgSVQG3fNCs6dtHf3Ma74QKtfwChWDo_ro2ciGb3c2ORz2NlN1iNiGx3hb1fSO9lZnmuoj0YI5HYzYXPiEvhq5IlHXx3QURsq-h3_pW0PS0s5Sm-NvZMUNoot0lowhImWXXGrFahqh1oE3x1VjToDvZenhS6iOgZ5Idia3WMsbAdwecOqLKWCeu2QRdtE07" />
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-8">
+                            <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                                <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">02 /
+                                    Atelier</span>
+                                <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">
+                                    Artifact
+                                    04</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-image-container relative aspect-square group">
+                        <img class="w-full h-full object-cover group-hover:scale-110"
+                            data-alt="A detailed macro shot of a Spider brand jewelry piece: a brooch designed with intricate silver web-work and large, deep red garnet gemstones. The piece is pinned to a rich black velvet tuxedo lapel. The lighting is focused and warm, making the red facets of the gem sparkle with a luxurious, expensive fire against the soft texture of the fabric."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMhqhj6oejZk9poaVuiyQCS8BAK-yy2Nq6iecf9gNNcBeZbkwKqtf4QtFWtU7PnNp3vh61aMbBo1nYPrgSVQG3fNCs6dtHf3Ma74QKtfwChWDo_ro2ciGb3c2ORz2NlN1iNiGx3hb1fSO9lZnmuoj0YI5HYzYXPiEvhq5IlHXx3QURsq-h3_pW0PS0s5Sm-NvZMUNoot0lowhImWXXGrFahqh1oE3x1VjToDvZenhS6iOgZ5Idia3WMsbAdwecOqLKWCeu2QRdtE07" />
+                        <div
+                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-end p-8">
+                            <div class="translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+                                <span class="font-label-sm text-label-sm uppercase text-ruby-core block mb-2">02 /
+                                    Atelier</span>
+                                <h3 class="font-headline-md text-headline-md text-white uppercase tracking-wider">
+                                    Artifact
+                                    04</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Grid Item 3: Horizontal Cinematic Full Width -->
-            <div class="md:col-span-12 gallery-image-container relative aspect-[21/9] group overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
-                <div class="w-full h-full bg-cover bg-center transition-transform duration-[2s] group-hover:scale-[1.03]"
-                    data-alt="A wide, cinematic landscape view of a minimalist fashion atelier at night. The space is vast with dark, polished floors and tall concrete pillars. Rolls of deep red silk and architectural sketches are laid out on a black obsidian table. Strips of red neon light trace the geometric patterns of the ceiling, creating a moody, futuristic laboratory for fashion creation."
-                    style="background-image: url('./imgs/file_00000000507471f481fbc94ac58bd636.png')">
-                </div>
+                <!-- Grid Item 3: Horizontal Cinematic Full Width -->
+                <div class="md:col-span-12 gallery-image-container relative aspect-[21/9] group overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-[2s] group-hover:scale-[1.03]"
+                        data-alt="A wide, cinematic landscape view of a minimalist fashion atelier at night. The space is vast with dark, polished floors and tall concrete pillars. Rolls of deep red silk and architectural sketches are laid out on a black obsidian table. Strips of red neon light trace the geometric patterns of the ceiling, creating a moody, futuristic laboratory for fashion creation."
+                        style="background-image: url('./imgs/file_00000000507471f481fbc94ac58bd636.png')">
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Footer Shell -->
-    <footer class="w-full border-t border-outline-variant/15 bg-black" id="footer">
-        <div
-            class="flex flex-col items-center pt-16 pb-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full mb-10">
-                <div class="flex flex-col gap-6">
-                    <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Navigation</h5>
-                    <ul class="flex flex-col gap-4   text-on-surface-variant">
-                        <!-- <li><a class="hover:text-primary transition-colors duration-300" href="#">Collections</a></li> -->
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#">Gallery</a></li>
-                        <!-- <li><a class="hover:text-primary transition-colors duration-300" href="#">About</a></li> -->
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-6">
-                    <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Legal</h5>
-                    <ul class="flex flex-col gap-4   text-on-surface-variant">
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
-                        </li>
-                        <li><a class="hover:text-primary transition-colors duration-300" href="#">Terms of Service</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-6">
-                    <!-- <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Join Us</h5>
+        </section>
+        <!-- Footer Shell -->
+        <footer class="w-full border-t border-outline-variant/15 bg-black" id="footer">
+            <div
+                class="flex flex-col items-center pt-16 pb-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 w-full mb-10">
+                    <div class="flex flex-col gap-6">
+                        <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Navigation</h5>
+                        <ul class="flex flex-col gap-4   text-on-surface-variant">
+                            <!-- <li><a class="hover:text-primary transition-colors duration-300" href="#">Collections</a></li> -->
+                            <li><a class="hover:text-primary transition-colors duration-300" href="#">Gallery</a></li>
+                            <!-- <li><a class="hover:text-primary transition-colors duration-300" href="#">About</a></li> -->
+                            <li><a class="hover:text-primary transition-colors duration-300" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Legal</h5>
+                        <ul class="flex flex-col gap-4   text-on-surface-variant">
+                            <li><a class="hover:text-primary transition-colors duration-300" href="#">Privacy Policy</a>
+                            </li>
+                            <li><a class="hover:text-primary transition-colors duration-300" href="#">Terms of
+                                    Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <!-- <h5 class="font-label-sm text-label-sm uppercase tracking-widest text-ruby-core">Join Us</h5>
                     <ul class="flex flex-col gap-4   text-on-surface-variant">
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Careers</a></li>
                         <li><a class="hover:text-primary transition-colors duration-300" href="#">Affiliate Program</a>
                         </li>
                     </ul> -->
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h5
+                            class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant text-ruby-core">
+                            Follow Us
+                        </h5>
+                        <ul class="flex gap-4  text-2xl">
+                            <li><a class="hover:text-primary transition-colors duration-300"
+                                    href="https://www.instagram.com/spideer_fashion?fbclid=IwY2xjawSr7XVleHRuA2FlbQIxMABicmlkETFEOUgwWU9USDJYNEZWV2dRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlP3Euk_WZbA4_iS6RtVOkgMLfPh6W6CmijNc1Bkqc82ohHG789YtV0-yof__aem_1wja-wIj-mrhfA7tPtgqXw"
+                                    target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a class="hover:text-primary transition-colors duration-300"
+                                    href="https://www.facebook.com/share/1FAj3x7cLg/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f "></i></a></li>
+                            <li><a class="hover:text-primary transition-colors duration-300"
+                                    href="https://www.tiktok.com/@spideer_fashion?is_from_webapp=1&sender_device=pc"
+                                    target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-6">
-                    <h5
-                        class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant text-ruby-core">
-                        Follow Us
-                    </h5>
-                    <ul class="flex gap-4  text-2xl">
-                        <li><a class="hover:text-primary transition-colors duration-300"
-                                href="https://www.instagram.com/spideer_fashion?fbclid=IwY2xjawSr7XVleHRuA2FlbQIxMABicmlkETFEOUgwWU9USDJYNEZWV2dRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlP3Euk_WZbA4_iS6RtVOkgMLfPh6W6CmijNc1Bkqc82ohHG789YtV0-yof__aem_1wja-wIj-mrhfA7tPtgqXw"
-                                target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a class="hover:text-primary transition-colors duration-300"
-                                href="https://www.facebook.com/share/1FAj3x7cLg/" target="_blank"><i
-                                    class="fa-brands fa-facebook-f "></i></a></li>
-                        <li><a class="hover:text-primary transition-colors duration-300"
-                                href="https://www.tiktok.com/@spideer_fashion?is_from_webapp=1&sender_device=pc"
-                                target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                    </ul>
-                </div>
+                <p class="font-label-sm text-label-sm tracking-widest text-on-surface-variant opacity-40 uppercase">
+                    © 2026 SPIDER. ALL RIGHTS RESERVED.
+                </p>
             </div>
-            <p class="font-label-sm text-label-sm tracking-widest text-on-surface-variant opacity-40 uppercase">
-                © 2026 SPIDER. ALL RIGHTS RESERVED.
-            </p>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
     <script>
-        // Navbar opacity and style scroll effect
-        // window.addEventListener('scroll', () => {
-        //     const nav = document.querySelector('nav');
-        //     if (window.scrollY > 100) {
-        //         nav.classList.add('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
-        //         nav.classList.remove('md:py-8', 'bg-transparent');
-        //     } else {
-        //         nav.classList.remove('bg-background/95', 'backdrop-blur-xl', 'py-4', 'shadow-2xl');
-        //         nav.classList.add('md:py-8', 'bg-transparent');
-        //     }
-        // });        
+        const video = document.getElementById('loading-video');
+        const preloader = document.getElementById('preloader');
+        const mainContent = document.getElementById('main-content');
+
+        video.addEventListener('ended', () => {
+            // Fade out preloader
+            preloader.style.opacity = '0';
+
+            // Show main content after fade
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                mainContent.classList.remove('hidden');
+            }, 600);
+        });
+
+        // Fallback: if video fails to play or takes too long, show main content after 5 seconds
+        setTimeout(() => {
+            if (preloader.style.display !== 'none') {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                    mainContent.classList.remove('hidden');
+                }, 600);
+            }
+        }, 5500);
     </script>
 </body>
 

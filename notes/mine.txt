@@ -1,0 +1,22 @@
+-- fixed → Removes the element from normal document flow and positions it relative to the viewport (the browser window).
+-- inset-0 → This is a shorthand that sets:
+-top: 0
+-right: 0
+-bottom: 0
+-left: 0
+Together, 
+fixed inset-0 makes the preloader div cover the entire screen completely, no matter the scroll position.
+____________________________________________________
+---> Current Situation: 
+-Parent: fixed inset-0 bg-black (no flex).
+-Video: w-full h-full (but without object-cover).
+
+Even without flex items-center justify-center,
+the video still looks centered. Here's why it's still "centered":
+
+-- w-full h-full makes the video try to fill the entire parent (which is full screen because of fixed inset-0).
+By default, browsers treat <video> elements with aspect ratio preservation.
+-- When you use w-full h-full without object-cover, the video behaves similarly to object-contain.
+It scales to fit inside the container while keeping its original proportions.
+-- This creates black bars (letterboxing) on the sides or top/bottom, depending on the video’s aspect ratio vs screen ratio.
+-- Because of this, the video appears visually centered inside the full-screen black container.
